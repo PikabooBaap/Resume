@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -7,23 +6,28 @@
   <title>Abhay Pratap Singh – Resume</title>
   <meta name="description" content="Personal resume website of Abhay Pratap Singh – tech enthusiast and FPV racing drone pilot.">
   <meta name="author" content="Abhay Pratap Singh">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&amp;family=Space+Mono:wght@400;700&amp;display=swap">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
   <header>
     <h1>Abhay Pratap Singh</h1>
-    <p><strong>Your Homely FPV Racer</strong></p>
-    <p><em>Tech Enthusiast &middot; FPV Racing Drone Pilot &middot; MBBS &amp; BBA (DBE) Student</em></p>
+    <p class="tagline"><strong>Your Homely FPV Racer</strong></p>
+    <p class="subtitle"><em>Tech Enthusiast &middot; FPV Racing Drone Pilot &middot; MBBS &amp; BBA (DBE) Student</em></p>
 
-   
     <nav aria-label="Section navigation">
-      <a href="#about">About</a> |
-      <a href="#skills">Skills</a> |
-      <a href="#experience">Experience</a> |
-      <a href="#education">Education</a> |
-      <a href="#projects">Projects</a> |
-      <a href="#interests">Interests</a> |
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#interests">Interests</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -32,14 +36,12 @@
 
   <main>
 
-
     <section id="about">
       <h2>About Me</h2>
 
-    
       <figure>
         <img src="profile-photo.jpg" width="180" height="180"
-             alt="Photo of Abhay Pratap Singh">
+             alt="Photo of Abhay Pratap Singh" class="profile-pic">
         <figcaption>Abhay Pratap Singh</figcaption>
       </figure>
 
@@ -58,12 +60,11 @@
 
     <hr>
 
-
     <section id="skills">
       <h2>Skills</h2>
       <p>A snapshot of what I know and how confident I am with each:</p>
 
-      <table border="1" cellpadding="8" cellspacing="0">
+      <table class="info-table">
         <caption><strong>Technical, Hobby &amp; Soft Skills</strong></caption>
         <thead>
           <tr>
@@ -107,13 +108,11 @@
     <section id="experience">
       <h2>Work Experience</h2>
 
-      <article>
+      <article class="card">
         <h3>Google Student Ambassador — Google</h3>
-        <p>
-          <em>
-            <time datetime="2026">2026</time> – Present
-            &nbsp;|&nbsp; India
-          </em>
+        <p class="meta">
+          <time datetime="2026">2026</time> – Present
+          &nbsp;|&nbsp; India
         </p>
         <ul>
           <li>Represent Google on campus and help build awareness of its tools, programmes and developer resources.</li>
@@ -121,13 +120,11 @@
         </ul>
       </article>
 
-      <article>
+      <article class="card">
         <h3>Research Contributor — Centolla (Paris, France)</h3>
-        <p>
-          <em>
-            <time datetime="2026-05">May 2026</time>
-            &nbsp;|&nbsp; Remote / Paris, France
-          </em>
+        <p class="meta">
+          <time datetime="2026-05">May 2026</time>
+          &nbsp;|&nbsp; Remote / Paris, France
         </p>
         <ul>
           <li>Contributed to research on <strong>Artificial Intelligence for Child Safety</strong>.</li>
@@ -137,26 +134,25 @@
 
     <hr>
 
-    
     <section id="education">
       <h2>Education</h2>
 
-      <article>
+      <article class="card">
         <h3>MBBS (Bachelor of Medicine, Bachelor of Surgery)</h3>
         <p>SKS Hospital Medical College and Research Centre</p>
-        <p><em>Second year &middot; Expected graduation: <time datetime="2029">2029</time></em></p>
+        <p class="meta"><em>Second year &middot; Expected graduation: <time datetime="2029">2029</time></em></p>
       </article>
 
-      <article>
+      <article class="card">
         <h3>BBA in Digital Business &amp; Entrepreneurship (DBE)</h3>
         <p>Indian Institute of Management (IIM) Bangalore</p>
-        <p><em>Currently pursuing &middot; Expected: <time datetime="2027">2027</time></em></p>
+        <p class="meta"><em>Currently pursuing &middot; Expected: <time datetime="2027">2027</time></em></p>
       </article>
 
-      <article>
+      <article class="card">
         <h3>Senior Secondary Education (Class XII)</h3>
         <p>St. Peter's Senior Secondary School, Bharatpur</p>
-        <p><em>Completed: <time datetime="2022">2022</time></em></p>
+        <p class="meta"><em>Completed: <time datetime="2022">2022</time></em></p>
       </article>
     </section>
 
@@ -166,26 +162,27 @@
       <h2>Projects</h2>
       <p>A few things I have built and worked on.</p>
 
-      <article>
+      <article class="card">
         <h3>Personal Resume Website</h3>
-        <p>A single-page resume website built from scratch using semantic HTML to
-           showcase my background, skills and projects — this very site!</p>
-        <p><strong>Technologies used:</strong> HTML, semantic tags, tables</p>
+        <p>A single-page resume website built from scratch using semantic HTML
+           and styled with CSS to showcase my background, skills and projects —
+           this very site!</p>
+        <p class="tech"><strong>Technologies used:</strong> HTML, CSS, semantic tags, tables</p>
       </article>
 
-      <article>
+      <article class="card">
         <h3>FPV Racing Drone Build &amp; Tuning</h3>
         <p>Built, configured and piloted a first-person-view (FPV) racing drone —
            from assembling the frame and electronics to tuning the flight
            controller for fast, responsive racing.</p>
-        <p><strong>Technologies / tools used:</strong> RC electronics, flight controller &amp; ESCs, soldering, drone configuration software</p>
+        <p class="tech"><strong>Technologies / tools used:</strong> RC electronics, flight controller &amp; ESCs, soldering, drone configuration software</p>
       </article>
 
-      <article>
+      <article class="card">
         <h3>AI for Child Safety (Research)</h3>
         <p>Worked with Centolla (Paris, France) on research exploring how
            Artificial Intelligence can help improve child safety.</p>
-        <p><strong>Areas involved:</strong> AI/ML concepts, research &amp; analysis</p>
+        <p class="tech"><strong>Areas involved:</strong> AI/ML concepts, research &amp; analysis</p>
       </article>
     </section>
 
@@ -218,7 +215,7 @@
       Phone: <a href="tel:+918107220880">+91 81072 20880</a><br>
       GitHub: <a href="https://github.com/PikabooBaap">github.com/PikabooBaap</a>
     </address>
-    <p><small>&copy; <time datetime="2026">2026</time> Abhay Pratap Singh. Built with HTML.</small></p>
+    <p><small>&copy; <time datetime="2026">2026</time> Abhay Pratap Singh. Built with HTML &amp; CSS.</small></p>
   </footer>
 
 </body>
